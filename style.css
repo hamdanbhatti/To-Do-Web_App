@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Poppins", sans-serif;
+}
+body {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #43454a;
+}
+.wrapper {
+   width: 400px;
+   background: #fff;
+   padding: 40px;
+   border-radius: 8px;
+   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+.wrapper h3 {
+   font-size: 28px;
+   margin-bottom: 10px;
+}
+.input_wrapper {
+   display: flex;
+   gap: 10px;
+}
+.input_wrapper input {
+   padding: 10px;
+   flex: 1 1 auto;
+   border-radius: 8px;
+   border: 3px solid #d5d5d5;
+   font-size: 17px;
+   outline: none;
+   box-shadow: 0.1px 0.1px 10px black;
+}
+.input_wrapper button {
+   padding: 12px 25px;
+   font-size: 14px;
+   font-weight: 600;
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+   background: rgba(108, 183, 119, 0.804);
+}
+.input_wrapper button:hover {
+   background-color: #484343;
+   color: azure;
+   transition: 0.4s all;
+}
+#taskList {
+   max-height: 300px;
+   overflow-y: auto;
+   margin-top: 12px;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+#taskList::-webkit-scrollbar {
+   display: none;
+}
+#taskList li {
+   display: flex;
+   justify-content: space-between;
+}
+#taskList li p {
+   font-size: 17px;
+   font-weight: 700;
+   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+   cursor: pointer;
+}
+#taskList li p.done {
+   text-decoration: line-through;
+   color: #0f0;
+}
+#taskList li span {
+   height: 24px;
+   width: 24px;
+   font-size: 18px;
+   font-weight: bolder;
+   color: #000000;
+   background: #ffffff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10%;
+   cursor: pointer;
+}
